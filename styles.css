@@ -1,0 +1,74 @@
+img {
+  width: 100%;
+  max-width: 700px;
+  display: block;
+  margin: 0 auto;
+  border: 7px solid #e0eeee;
+  border-radius: 1.5rem;
+}
+
+body {
+  background-color: #c2e6ec;
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.2rem;
+  margin: 2rem;
+}
+.description {
+  font-style: italic;
+}
+p {
+  font-size: 1.5rem;
+}
+input {
+  font-size: 1.2rem;
+  font-family: "Lexend Deca", sans-serif;
+  padding: 0.3rem;
+  background-color: #e0eeee;
+  border: 0.25rem solid #000000;
+  border-radius: 1rem;
+}
+input[type="submit"]:hover {
+  background-color: #c2e6ec;
+}
+fieldset {
+  font-size: 1.5rem;
+  text-align: center;
+  border: 7px solid #e0eeee;
+  border-radius: 1.5rem;
+  padding-bottom: 2.5rem;
+}
+legend {
+  background-color: #e0eeee;
+  border-radius: 1.5rem;
+  padding: 0.6rem;
+  text-transform: capitalize;
+}
+select {
+  font-size: 1.2rem;
+  background-color: #e0eeee;
+  border-radius: 1rem;
+  border: 0.2rem solid #000000;
+  display: inline;
+  padding: 0.25rem;
+  font-family: "Lexend Deca", sans-serif;
+  color: gray;
+}
+input[type="radio"] {
+  transform: scale(2);
+  margin: 0.5rem;
+}
+input[type="checkbox"] {
+  transform: scale(2);
+  margin: 0.5rem;
+}
+textarea {
+  width: 40rem;
+  height: 10rem;
+  font-size: 1.2rem;
+  font-family: "Lexend Deca", sans-serif;
+  border-radius: 1.5rem;
+  border: 0.2rem solid #000000;
+  background-color: #e0eeee;
+  padding: 1rem;
+}
