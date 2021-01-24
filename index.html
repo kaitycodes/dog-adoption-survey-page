@@ -1,68 +1,104 @@
 <!DOCTYPE html>
-
-<head>
+<html>
+  <head>
     <title>Dog Adoption Survey</title>
-    <link href="./styles.css" rel="stylesheet" type="text/css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Open+Sans&display=swap" rel="stylesheet">
-</head>
+    <link href="./styles.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-    <img src="images/surveyformheaderimage.jpg"
-        alt="A photo of a woman looking at her laptop screen with her dog laying next to her." />
+  <body>
+    <img
+      src="images/surveyformheaderimage.jpg"
+      alt="A photo of a woman looking at her laptop screen with her dog laying next to her."
+    />
     <h1 id="title">Dog Adoption Survey</h1>
-    <p id="description" class="description">Complete this survey so our adoption team can help you find the best match
+    <p id="description" class="description">
+      Complete this survey so our adoption team can help you find the best match
     </p>
     <br />
     <fieldset>
-        <legend> Contact Information:</legend>
-        <label id="name-label">Name: <br />
-            <input type="text" name="name" placeholder="Enter full name" /></label><br />
-        <label id="email-label">Email:<br />
-            <input type="email" name="email" placeholder="doglover@example.com" /></label><br />
-        <label id="number-label">Phone:<br />
-            <input id="number" type="tel" name="phone" min="10" max="10" pattern="^\d{3}-\d{3}-\{4}$"
-                placeholder="000-000-0000" required /></label>
+      <legend>Contact Information:</legend>
+      <label id="name-label"
+        >Name: <br />
+        <input type="text" name="name" placeholder="Enter full name" /></label
+      ><br />
+      <label id="email-label"
+        >Email:<br />
+        <input
+          type="email"
+          name="email"
+          placeholder="doglover@example.com" /></label
+      ><br />
+      <label id="number-label"
+        >Phone:<br />
+        <input
+          id="number"
+          type="tel"
+          name="phone"
+          min="10"
+          max="10"
+          pattern="^\d{3}-\d{3}-\{4}$"
+          placeholder="000-000-0000"
+          required
+      /></label>
     </fieldset>
     <form id="survey-form" action="https://www.adoptadog.com.php" method="POST">
-    <p>When are you looking to adopt your dog?</p>
-    <select name="when">
-        <option value="<1 month" selected="selected">within the next month</option>
+      <p>When are you looking to adopt your dog?</p>
+      <select name="when">
+        <option value="<1 month" selected="selected">
+          within the next month
+        </option>
         <option value="1-3 months from now">1-3months from now</option>
         <option value="4-6 months from now">4-6 months from now</option>
-        <option value="6 or more months from now">6 or more months from now</option>
-    </select>
-    <p>How many animals do you live with now?</p>
-    <input type="radio" name="amount" value="none" /> none
-    <input type="radio" name="amount" value="one" /> one
-    <input type="radio" name="amount" value="two" /> two
-    <input type="radio" name="amount" value="three" /> three
-    <input type="radio" name="amount" value="four or more" /> four or more
-    <p>If applicable: what types of animals would your dog be living with?</p>
-    <input type="checkbox" name="animal type" value="dogs" /> dogs
-    <input type="checkbox" name="animal type" value="cats" /> cats
-    <input type="checkbox" name="animal type" value="birds" /> birds
-    <input type="checkbox" name="animal type" value="rodents" /> rodents
-    <input type="checkbox" name="animal type" value="reptiles" /> reptiles
-    <input type="checkbox" name="animal type" value="fish" /> fish
-    <input type="checkbox" name="animal type" value="rabbits" /> rabbits
-    <input type="checkbox" name="animal type" value="farm animals" /> farm animals
-    <br />
-    <br /><input type="checkbox" name="animal type" value="" /><label>other: <input type="text" name="other" /></label>
-    <p>Tell us about any space limitations and/or safety considerations at your residence:</p>
-    <textarea name="residence considerations" placeholder="e.g., no fenced yard, small apartment, on a busy street...">
-</textarea>
-    <p>What characteristics are you looking for in a dog?</p>
-    <textarea name="dog qualities"
-        placeholder="e.g., couch potato, walking/jogging buddy, family pet, energetic, rarely barks, mischievous..">
-</textarea>
-    <p>Anything else you would like to share with us?</p>
-    <textarea name="comments" placeholder="i.e., anything that can help us find you the best dog match!">
-</textarea>
-    <br />
-    <br />
-    <input type="submit" value="Submit" />
+        <option value="6 or more months from now">
+          6 or more months from now
+        </option>
+      </select>
+      <p>How many animals do you live with now?</p>
+      <input type="radio" name="amount" value="none" /> none
+      <input type="radio" name="amount" value="one" /> one
+      <input type="radio" name="amount" value="two" /> two
+      <input type="radio" name="amount" value="three" /> three
+      <input type="radio" name="amount" value="four or more" /> four or more
+      <p>If applicable: what types of animals would your dog be living with?</p>
+      <input type="checkbox" name="animal type" value="dogs" /> dogs
+      <input type="checkbox" name="animal type" value="cats" /> cats
+      <input type="checkbox" name="animal type" value="birds" /> birds
+      <input type="checkbox" name="animal type" value="rodents" /> rodents
+      <input type="checkbox" name="animal type" value="reptiles" /> reptiles
+      <input type="checkbox" name="animal type" value="fish" /> fish
+      <input type="checkbox" name="animal type" value="rabbits" /> rabbits
+      <input type="checkbox" name="animal type" value="farm animals" /> farm
+      animals
+      <br />
+      <br /><input type="checkbox" name="animal type" value="" /><label
+        >other: <input type="text" name="other"
+      /></label>
+      <p>
+        Tell us about any space limitations and/or safety considerations at your
+        residence:
+      </p>
+      <textarea
+        name="residence considerations"
+        placeholder="e.g., no fenced yard, small apartment, on a busy street..."
+      ></textarea>
+      <p>What characteristics are you looking for in a dog?</p>
+      <textarea
+        name="dog qualities"
+        placeholder="e.g., couch potato, walking/jogging buddy, family pet, energetic, rarely barks, mischievous.."
+      ></textarea>
+      <p>Anything else you would like to share with us?</p>
+      <textarea
+        name="comments"
+        placeholder="i.e., anything that can help us find you the best dog match!"
+      ></textarea>
+      <br />
+      <br />
+      <input type="submit" value="Submit" />
     </form>
-</body>
-
+  </body>
 </html>
